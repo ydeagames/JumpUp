@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3587961ada30833499ca61e4e1d5b06f, type: 3}
-  m_Name: Tile1
+  m_Name: Tiles
   m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
@@ -36,7 +36,8 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_Prefabs:
-  - {fileID: 7658181988019811245, guid: b78587f62a351c749a89e9f06cf0db4a, type: 3}
-  - {fileID: 4133567549833401277, guid: cbf0d6038c3862a42a996d2f8dbfdf35, type: 3}
+  - {fileID: 792641172985557870, guid: 3a195aec6281f454dbfb31c58899cc3c, type: 3}
+  - {fileID: 792641172985557870, guid: 9ad6a371b29224349be02dfa8a0b4d14, type: 3}
+  - {fileID: 792641172985557870, guid: f28e85132c7275143802f2ac1c3bc773, type: 3}
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
   m_Index: 0
