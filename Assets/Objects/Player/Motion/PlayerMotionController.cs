@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PlayerMotionController : MonoBehaviour
 {
     Animator animator;         // Animator管理用
     public float stopSpeed = 1e-4f;

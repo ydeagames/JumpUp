@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 // プレイヤークラス
 public class PlayerController : MonoBehaviour
@@ -14,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public Collider2D footCollider;
     // 床あたり
     public LayerMask footLayerMask;
+    // 死ぬレイヤー
+    public LayerMask deathLayer;
 
     private float move;
     private bool jump;
@@ -54,6 +58,15 @@ public class PlayerController : MonoBehaviour
                 rigid.AddForce(Vector2.up * jumpPower);
                 jump = false;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (deathLayer.value == (deathLayer.value | (1 << other.gameObject.layer)))
+        {
+            if (!GameManager.Get().isDying)
+                GameManager.Get().Dying();
         }
     }
 }
