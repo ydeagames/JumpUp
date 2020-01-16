@@ -11,9 +11,12 @@ public class PlayerController : MonoBehaviour
     // 移動力
     public float movePower = 1;
     // 床当たり判定
-    public BoxCollider2D footCollider;
+    public Collider2D footCollider;
     // 床あたり
     public LayerMask footLayerMask;
+
+    private float move;
+    private bool jump;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +28,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // 移動
-        rigid.AddForce(new Vector2(Input.GetAxis("Horizontal") * movePower, 0));
+        move = Input.GetAxis("Horizontal");
+
+        // ジャンプ
+        if (Input.GetButtonDown("Jump"))
+            jump = true;
+    }
+
+    void FixedUpdate()
+    {
+        // 移動
+        rigid.AddForce(new Vector2(move * movePower, 0));
         // var vel = rigid.velocity;
         // vel.x = Input.GetAxis("Horizontal") * movePower;
         // rigid.velocity = vel;
@@ -33,8 +46,11 @@ public class PlayerController : MonoBehaviour
         if (footCollider.IsTouchingLayers(footLayerMask.value))
         {
             // ジャンプ
-            if (Input.GetButtonDown("Jump"))
+            if (jump)
+            {
                 rigid.AddForce(Vector2.up * jumpPower);
+                jump = false;
+            }
         }
     }
 }
