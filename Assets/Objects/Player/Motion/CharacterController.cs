@@ -61,4 +61,10 @@ public class CharacterController : MonoBehaviour
             this.transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
         }
     }
+
+    public void Death()
+    {
+        // 死ぬ
+        this.animator.SetTrigger("Death");
+    }
 }

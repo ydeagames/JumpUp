@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// 簡易プレイヤークラス (Unityちゃんに差し替え予定)
+// プレイヤークラス
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rigid;

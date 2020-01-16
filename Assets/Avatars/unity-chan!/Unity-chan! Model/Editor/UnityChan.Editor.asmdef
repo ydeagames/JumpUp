@@ -1,0 +1,16 @@
+{
+    "name": "UnityChan.Editor",
+    "references": [
+        "GUID:b12ac47d0d7e3764480f0055d8dac4ce"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
