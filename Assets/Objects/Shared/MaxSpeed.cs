@@ -6,7 +6,7 @@ using UnityEngine;
 public class MaxSpeed : MonoBehaviour
 {
     // 最大速度
-    public Vector2 maxSpeed = new Vector2(2, 2);
+    public Vector2 maxSpeed = new Vector2(1, 1);
     private Rigidbody2D rigid;
 
     // Start is called before the first frame update

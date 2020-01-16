@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     // ジャンプ力
     public float jumpPower = 1;
     // 移動力
-    public float movePower = 1;
+    public float movePower = 0.5f;
     // 床当たり判定
     public Collider2D footCollider;
     // 床あたり
@@ -21,24 +21,29 @@ public class PlayerController : MonoBehaviour
 
     private float move;
     private bool jump;
+    private GameManager manager;
 
     // Start is called before the first frame update
     void Start()
     {
+        manager = GameManager.Get();
         rigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 移動
-        move = Input.GetAxis("Horizontal");
-
-        // ジャンプ
-        if (footCollider.IsTouchingLayers(footLayerMask.value))
+        if (!manager.isDying)
         {
-            if (Input.GetButtonDown("Jump"))
-                jump = true;
+            // 移動
+            move = Input.GetAxis("Horizontal");
+
+            // ジャンプ
+            if (footCollider.IsTouchingLayers(footLayerMask.value))
+            {
+                if (Input.GetButtonDown("Jump"))
+                    jump = true;
+            }
         }
     }
 
@@ -61,12 +66,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (deathLayer.value == (deathLayer.value | (1 << other.gameObject.layer)))
         {
-            if (!GameManager.Get().isDying)
-                GameManager.Get().Dying();
+            if (!manager.isDying)
+            {
+                rigid.drag = 100;
+                manager.Dying();
+            }
         }
     }
 }
