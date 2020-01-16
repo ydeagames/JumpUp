@@ -31,8 +31,11 @@ public class PlayerController : MonoBehaviour
         move = Input.GetAxis("Horizontal");
 
         // ジャンプ
-        if (Input.GetButtonDown("Jump"))
-            jump = true;
+        if (footCollider.IsTouchingLayers(footLayerMask.value))
+        {
+            if (Input.GetButtonDown("Jump"))
+                jump = true;
+        }
     }
 
     void FixedUpdate()

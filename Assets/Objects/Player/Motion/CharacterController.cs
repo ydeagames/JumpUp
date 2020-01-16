@@ -8,10 +8,12 @@ public class CharacterController : MonoBehaviour
     public float stopSpeed = 1e-4f;
     private float rotation = 0;
     public float lerp = .1f;
+    private Rigidbody2D rigid;
 
     // Start is called before the first frame update
     void Start()
     {
+        rigid = GetComponentInParent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -21,7 +23,7 @@ public class CharacterController : MonoBehaviour
         // 移動入力
         float move = Input.GetAxis("Horizontal");
 
-        //characterの移動判定用
+        // characterの移動判定用
         int key = 0;
         if (move > stopSpeed)
             key = 1;
@@ -31,22 +33,10 @@ public class CharacterController : MonoBehaviour
             key = 0;
 
         // アニメーション管理
-        //bool型のRunをtrueに(走るアニメーションの開始)
-        animator.SetBool("Run", Mathf.Abs(move) > stopSpeed);
-
-        // if (rigid2D.velocity.y == 0)    //地面に着かないためコメント化
-        {
-            if (Input.GetButtonDown("Jump"))
-            {
-                //ジャンプ
-                //ジャンプアニメーションを起動
-                this.animator.SetTrigger("JumpTrigger");
-                /*
-                //上方向に力を加える(ジャンプ)
-                this.rigid2D.AddForce(transform.up * this.jumpForce);
-                */
-            }
-        }
+        // bool型のRunをtrueに(走るアニメーションの開始)
+        this.animator.SetBool("Run", Mathf.Abs(move) > stopSpeed);
+        // ジャンプアニメーションを起動
+        this.animator.SetBool("Jump", rigid.velocity.y > stopSpeed);
 
         //if (key != 0)
         {
