@@ -7,32 +7,43 @@ public class ScoreController : MonoBehaviour
 {
     //距離を計算するターゲットオブジェクト
     [SerializeField]
-    private Transform targetObj1;
-    //距離を計算するターゲットオブジェクト
-    [SerializeField]
-    private Transform targetObj2;
+    private GameObject targetObj1;
+    //スコア
+    float score;
+    //ハイスコア
+    float hiScore;
     //スコア用のテキスト
     private Text scoreText;
+    //距離計算用
+    int distance;
+
+    private GameManager manager;
 
     // Start is called before the first frame update
     void Start()
     {
-       scoreText = GetComponentInChildren<Text>();
+        manager = GameManager.Get();
+        score = 0.0f;
+        hiScore = 0.0f;
+        scoreText = GetComponentInChildren<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //　距離を計算
-        var distance = Vector3.Distance(transform.position, targetObj2.position);
+        if (!manager.isDying)
+        {
+            score = targetObj1.transform.position.y;
 
-        if (scoreText != null)
-        {
-            scoreText.text = distance.ToString("0.00m");
-        }
-        else
-        {
- 
+            if(hiScore < score)
+            {
+                hiScore = score;
+            }
+
+            if (scoreText != null)
+            {
+                scoreText.text = hiScore.ToString("0.0m");
+            }
         }
     }
 }

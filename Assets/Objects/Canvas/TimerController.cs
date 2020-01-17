@@ -14,9 +14,12 @@ public class TimerController : MonoBehaviour
     //タイマー用テキスト
     private Text timerText;
 
+    private GameManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
+        manager = GameManager.Get();
         minute = 0;
         seconds = 0f;
         oldSeconds = 0f;
@@ -26,17 +29,20 @@ public class TimerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        seconds += Time.deltaTime;
-        if (seconds >= 60f)
+        if (!manager.isDying)
         {
-            minute++;
-            seconds = seconds - 60;
+            seconds += Time.deltaTime;
+            if (seconds >= 60f)
+            {
+                minute++;
+                seconds = seconds - 60;
+            }
+            //　値が変わった時だけテキストUIを更新
+            if ((int)seconds != (int)oldSeconds)
+            {
+                timerText.text = minute.ToString("00") + ":" + ((int)seconds).ToString("00");
+            }
+            oldSeconds = seconds;
         }
-        //　値が変わった時だけテキストUIを更新
-        if ((int)seconds != (int)oldSeconds)
-        {
-            timerText.text = minute.ToString("00") + ":" + ((int)seconds).ToString("00");
-        }
-        oldSeconds = seconds;
     }
 }
