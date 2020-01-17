@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
 {
-    //距離を計算するターゲットオブジェクト
-    [SerializeField]
-    private GameObject targetObj1;
     //スコア
     float score;
     //ハイスコア
@@ -33,7 +30,7 @@ public class ScoreController : MonoBehaviour
     {
         if (!manager.isDying)
         {
-            score = targetObj1.transform.position.y;
+            score = manager.player.transform.position.y;
 
             if(hiScore < score)
             {
