@@ -543,7 +543,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObj1: {fileID: 117355384}
-  targetObj2: {fileID: 1041343514}
 --- !u!4 &177559558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 792641172985557874, guid: 3a195aec6281f454dbfb31c58899cc3c,
@@ -1780,12 +1779,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 790374377}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &800553946 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2518877740402831941, guid: 4acc5e39a4125ac43bc4cd10fae1106d,
-    type: 3}
-  m_PrefabInstance: {fileID: 2518877740374409521}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &800778103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2121,7 +2114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1344820157}
-  - {fileID: 1796629432}
+  - {fileID: 800778104}
   - {fileID: 1273294239}
   - {fileID: 2066586064}
   - {fileID: 994002989}
@@ -2178,6 +2171,7 @@ Transform:
   - {fileID: 177559558}
   - {fileID: 2107961905}
   - {fileID: 1908891941}
+  - {fileID: 1796629432}
   m_Father: {fileID: 2134367189}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6091,6 +6085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
+        type: 3}
+      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneAdditive
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08dfbbbf223045848836d95fbf9d3cd0, type: 3}
