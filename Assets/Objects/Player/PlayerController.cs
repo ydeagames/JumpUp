@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask footLayerMask;
     // 死ぬレイヤー
     public LayerMask deathLayer;
+    // ジャンプ音
+    public AudioSource jumpSound;
 
     private float move;
     private bool jump;
@@ -42,7 +44,10 @@ public class PlayerController : MonoBehaviour
             if (footCollider.IsTouchingLayers(footLayerMask.value))
             {
                 if (Input.GetButtonDown("Jump"))
+                {
                     jump = true;
+                    jumpSound.Play();
+                }
             }
         }
     }
