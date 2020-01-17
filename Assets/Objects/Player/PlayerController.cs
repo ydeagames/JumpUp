@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask footLayerMask;
     // 死ぬレイヤー
     public LayerMask deathLayer;
+    // 死ぬエフェクト
+    public GameObject deathEffect;
 
     private float move;
     private bool jump;
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
             if (!manager.isDying)
             {
                 rigid.drag = 100;
+                deathEffect.SetActive(true);
                 manager.Dying();
             }
         }
