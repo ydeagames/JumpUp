@@ -6,13 +6,11 @@ using UnityEngine.UI;
 public class ScoreController : MonoBehaviour
 {
     //スコア
-    float score;
+    private float score;
     //ハイスコア
-    float hiScore;
+    public static float hiScore;
     //スコア用のテキスト
     private Text scoreText;
-    //距離計算用
-    int distance;
     //ゲームマナージャー読み込み用
     private GameManager manager;
     //保存したデータの読み込み用
@@ -24,7 +22,7 @@ public class ScoreController : MonoBehaviour
         score = 0.0f;
         hiScore = 0.0f;
         scoreText = GetComponentInChildren<Text>();
-        highScore = PlayerPrefs.GetFloat("highScore", 0);
+       // highScore = PlayerPrefs.GetFloat("highScore", 0);
        // Debug.Log(highScore);
     }
 
