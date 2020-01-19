@@ -17,6 +17,11 @@ public class SceneTransition : MonoBehaviour
         MyFade.Get().Fadeout(scene);
     }
 
+    public void LoadSceneAdditive(string scene)
+    {
+        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+    }
+
     public void Reload()
     {
         LoadScene(SceneManager.GetActiveScene().name);

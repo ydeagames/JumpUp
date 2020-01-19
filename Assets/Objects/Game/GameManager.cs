@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent dyingEvent;
     public UnityEvent deathEvent;
     public bool isDying;
+    public GameObject player;
 
     public void Dying()
     {
