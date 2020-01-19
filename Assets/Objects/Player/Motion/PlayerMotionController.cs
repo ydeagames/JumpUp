@@ -10,6 +10,8 @@ public class PlayerMotionController : MonoBehaviour
     public float lerp = .1f;
     private Rigidbody2D rigid;
     private GameManager manager;
+    private int key = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +29,12 @@ public class PlayerMotionController : MonoBehaviour
             float move = Input.GetAxis("Horizontal");
 
             // characterの移動判定用
-            int key = 0;
             if (move > stopSpeed)
-                key = 1;
+                key = 2;
             else if (move < -stopSpeed)
-                key = -1;
-            else
-                key = 0;
+                key = -2;
+            else if (key != 0)
+                key /= Mathf.Abs(key);
 
             // アニメーション管理
             // bool型のRunをtrueに(走るアニメーションの開始)
@@ -59,7 +60,7 @@ public class PlayerMotionController : MonoBehaviour
 
                 // ワールド座標基準で、現在の回転量へ加算する
                 //characterの向きを変える
-                var nextRotation = 90.0f * (2 - key);
+                var nextRotation = -45.0f * key + 180.0f;
                 rotation = Mathf.LerpAngle(rotation, nextRotation, lerp);
                 this.transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
