@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPower: 800
-  movePower: 100
+  movePower: 80
   footCollider: {fileID: 1107365562440434144}
   footLayerMask:
     serializedVersion: 2
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc6641f2bb06dc4f825dfe7bdf03c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: {x: 8, y: 30}
+  maxSpeed: {x: 6, y: 30}
 --- !u!50 &8091394732368226482
 Rigidbody2D:
   serializedVersion: 4
@@ -322,8 +322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e370d3e08f4fe4d911467fe4f36f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopSpeed: 0.5
-  lerp: 0.1
+  stopSpeed: 0
+  lerp: 0.4
 --- !u!1 &7335860350600422854
 GameObject:
   m_ObjectHideFlags: 0
