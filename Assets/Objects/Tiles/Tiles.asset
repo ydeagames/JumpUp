@@ -39,5 +39,6 @@ MonoBehaviour:
   - {fileID: 792641172985557870, guid: 3a195aec6281f454dbfb31c58899cc3c, type: 3}
   - {fileID: 792641172985557870, guid: 9ad6a371b29224349be02dfa8a0b4d14, type: 3}
   - {fileID: 792641172985557870, guid: f28e85132c7275143802f2ac1c3bc773, type: 3}
+  - {fileID: 792641172985557870, guid: 7f2af98412ba84247beaf9481f72cc6d, type: 3}
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
   m_Index: 0
