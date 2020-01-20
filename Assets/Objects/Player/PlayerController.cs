@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public GameObject deathEffect;
     // ジャンプ音
     public AudioSource jumpSound;
+    // 死ぬ音
+    public AudioSource deathSound;
 
     private float move;
     private bool jump;
@@ -81,6 +83,7 @@ public class PlayerController : MonoBehaviour
             {
                 rigid.drag = 100;
                 deathEffect.SetActive(true);
+                deathSound.Play();
                 manager.Dying();
             }
         }

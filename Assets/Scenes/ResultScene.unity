@@ -671,7 +671,6 @@ GameObject:
   - component: {fileID: 907008083}
   - component: {fileID: 907008086}
   - component: {fileID: 907008085}
-  - component: {fileID: 907008084}
   m_Layer: 5
   m_Name: HighScore (1)
   m_TagString: Untagged
@@ -698,18 +697,6 @@ RectTransform:
   m_AnchoredPosition: {x: -328, y: -81}
   m_SizeDelta: {x: 701.4, y: 178.90002}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &907008084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907008082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e00348fe384f9c40a50576a60efdc2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &907008085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,7 +1054,6 @@ GameObject:
   - component: {fileID: 1997485315}
   - component: {fileID: 1997485318}
   - component: {fileID: 1997485317}
-  - component: {fileID: 1997485316}
   m_Layer: 5
   m_Name: Score (1)
   m_TagString: Untagged
@@ -1094,18 +1080,6 @@ RectTransform:
   m_AnchoredPosition: {x: -345.85892, y: 62.104195}
   m_SizeDelta: {x: 701.4, y: 178.90002}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1997485316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997485314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b4ac569c330f44c9ba01d970fe2ba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1997485317
 MonoBehaviour:
   m_ObjectHideFlags: 0
