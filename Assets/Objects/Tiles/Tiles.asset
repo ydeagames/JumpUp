@@ -40,6 +40,8 @@ MonoBehaviour:
   - {fileID: 792641172985557870, guid: 9ad6a371b29224349be02dfa8a0b4d14, type: 3}
   - {fileID: 792641172985557870, guid: f28e85132c7275143802f2ac1c3bc773, type: 3}
   - {fileID: 792641172985557870, guid: 7f2af98412ba84247beaf9481f72cc6d, type: 3}
-  - {fileID: 792641172985557870, guid: 7f2af98412ba84247beaf9481f72cc6d, type: 3}
+  - {fileID: 1367866524703737278, guid: 301c32f5f2a648f499cef27a6dec5e21, type: 3}
+  - {fileID: 1367866524703737278, guid: 29c7a281f6fb37443806357cc957f684, type: 3}
+  - {fileID: 1367866524703737278, guid: 598fdc8af769f2445aa9df2066184ed0, type: 3}
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
-  m_Index: 0
+  m_Index: 5
