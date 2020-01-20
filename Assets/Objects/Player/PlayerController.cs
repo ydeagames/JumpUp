@@ -18,12 +18,16 @@ public class PlayerController : MonoBehaviour
     public LayerMask footLayerMask;
     // 死ぬレイヤー
     public LayerMask deathLayer;
+    // クリアレイヤー
+    public LayerMask clearLayer;
     // 死ぬエフェクト
     public GameObject deathEffect;
     // ジャンプ音
     public AudioSource jumpSound;
     // 死ぬ音
     public AudioSource deathSound;
+    // クリア音
+    public AudioSource clearSound;
 
     private float move;
     private bool jump;
@@ -85,6 +89,19 @@ public class PlayerController : MonoBehaviour
                 deathEffect.SetActive(true);
                 deathSound.Play();
                 manager.Dying();
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (clearLayer.value == (clearLayer.value | (1 << other.gameObject.layer)))
+        {
+            if (!manager.isDying)
+            {
+                rigid.drag = 100;
+                clearSound.Play();
+                manager.Cleared();
             }
         }
     }

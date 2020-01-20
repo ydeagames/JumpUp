@@ -8,8 +8,15 @@ public class GameManager : MonoBehaviour
 {
     public UnityEvent dyingEvent;
     public UnityEvent deathEvent;
+    public UnityEvent clearEvent;
     public bool isDying;
     public GameObject player;
+
+    public void Cleared()
+    {
+        isDying = true;
+        clearEvent.Invoke();
+    }
 
     public void Dying()
     {
