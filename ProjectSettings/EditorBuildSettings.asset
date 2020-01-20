@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: b978b079c1f46484b9fea2fe2dc7ebd3
   - enabled: 1
+    path: Assets/Scenes/SelectScene.unity
+    guid: 173a380d241a49840886ed7e45bebe13
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 73f09d139db041f49b16334e6e7dc748
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/itikiScene.unity
+    guid: 9b2056abe2cdef84bb8386b0c1761ee8
   m_configObjects: {}
