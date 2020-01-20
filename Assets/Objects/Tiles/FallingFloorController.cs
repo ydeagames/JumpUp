@@ -24,7 +24,7 @@ public class FallingFloorController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        checkFalling = true;
+        Physics.gravity = new Vector3(0, -3.0f, 0);
         Debug.Log(checkFalling);
     }
 }
