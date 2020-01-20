@@ -6047,64 +6047,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
         type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
       propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 12639504}
     - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
         type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Death
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
       propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 414291804}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Death
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: dyingEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
-        type: 3}
-      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSceneAdditive
-      objectReference: {fileID: 0}
     - target: {fileID: 7555810554868710043, guid: 08dfbbbf223045848836d95fbf9d3cd0,
         type: 3}
       propertyPath: player
@@ -7025,7 +6975,12 @@ PrefabInstance:
     - target: {fileID: 5000133008025942577, guid: 3e071cf0d2406664f99c0912de573aca,
         type: 3}
       propertyPath: field of view
-      value: 59.150608
+      value: 37.993412
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000133008025942577, guid: 3e071cf0d2406664f99c0912de573aca,
+        type: 3}
+      propertyPath: field of view
+      value: 37.993412
       objectReference: {fileID: 0}
     - target: {fileID: 5000133008126437256, guid: 3e071cf0d2406664f99c0912de573aca,
         type: 3}
@@ -7086,11 +7041,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -21.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5000133008025942577, guid: 3e071cf0d2406664f99c0912de573aca,
-        type: 3}
-      propertyPath: field of view
-      value: 30.666744
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e071cf0d2406664f99c0912de573aca, type: 3}

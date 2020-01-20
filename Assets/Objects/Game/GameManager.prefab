@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9022922858947193546}
   - component: {fileID: 7555810554868710043}
   - component: {fileID: 1859967308381897975}
+  - component: {fileID: 462808572937737584}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,11 +45,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d16600ef3cc9d447b85a14a36dbbc64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dyingEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   deathEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1859967308381897975}
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58,6 +84,8 @@ MonoBehaviour:
           m_StringArgument: ResultScene
           m_BoolArgument: 0
         m_CallState: 2
+  isDying: 0
+  player: {fileID: 0}
 --- !u!114 &1859967308381897975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,3 +98,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41b84aa4fdd63aa40b3b7f33fb903612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &462808572937737584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099049295410908374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eefe45ba1b98544e8a47685b96ac400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 27
+  onAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1859967308381897975}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SelectScene
+          m_BoolArgument: 0
+        m_CallState: 2
+  type: 0
