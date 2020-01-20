@@ -4705,6 +4705,11 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.b
       value: 0.079476655
       objectReference: {fileID: 0}
+    - target: {fileID: 1289134105580524814, guid: 61d09f2a93eccdc4f8b776fa3dfffe92,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GameScene
+      objectReference: {fileID: 0}
     - target: {fileID: 1289134107340279006, guid: 61d09f2a93eccdc4f8b776fa3dfffe92,
         type: 3}
       propertyPath: m_Text
@@ -4714,7 +4719,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3d50c1e00a896ae4493b27103715ca2e,
+      objectReference: {fileID: 21300000, guid: 0eaea46760da90d4a9eaf794e9d9c2e5,
         type: 3}
     - target: {fileID: 1393003464837951159, guid: 61d09f2a93eccdc4f8b776fa3dfffe92,
         type: 3}
@@ -6794,6 +6799,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1289134105580524814, guid: 61d09f2a93eccdc4f8b776fa3dfffe92,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: yuraScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486758401067035090, guid: 61d09f2a93eccdc4f8b776fa3dfffe92,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 46ee28e9041b6e34b92c9c97a18cae80,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d09f2a93eccdc4f8b776fa3dfffe92, type: 3}
 --- !u!1001 &5000133008829874073

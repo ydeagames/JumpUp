@@ -239,7 +239,7 @@ MonoBehaviour:
     m_Bits: 1024
   clearLayer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 6144
   deathEffect: {fileID: 5158461784915322558}
   jumpSound: {fileID: 1894074554040429759}
   deathSound: {fileID: 5436448784262337420}

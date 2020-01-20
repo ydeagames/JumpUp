@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/yuraScene.unity
+    guid: bcbf8295d26968b4b8c136c017edc5df
+  - enabled: 1
     path: Assets/Scenes/itikiScene.unity
     guid: 9b2056abe2cdef84bb8386b0c1761ee8
   m_configObjects: {}
