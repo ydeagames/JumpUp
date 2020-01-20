@@ -16,6 +16,7 @@ TagManager:
   - Stage
   - Player
   - DeathZone
+  - Movable
   - ClearZone
   - 
   - 
