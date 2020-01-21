@@ -276,7 +276,14 @@ PlayerSettings:
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: a76bc188f6cb4794c8a16c4dee15e5f0, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs:
@@ -288,7 +295,19 @@ PlayerSettings:
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
   vuforiaEnabled: 0
-  m_TemplateCustomTags: {}
+  m_TemplateCustomTags:
+    HEADER_INJECTION: "<meta property=\"og:url\" content=\"https://jumpup.ydea.games/\"
+      /> <meta property=\"og:type\" content=\"website\" /> <meta property=\"og:title\"
+      content=\"Jump Up\" /> <meta property=\"og:description\" content=\"\u4E0B\u304B\u3089\u8FEB\u308A\u304F\u308B\u6EB6\u5CA9\u306B\u8FFD\u3044\u3064\u304B\u308C\u306A\u3044\u3088\u3046\u306B\u4E0A\u3092\u76EE\u6307\u3059\u30B2\u30FC\u30E0\"
+      /> <meta property=\"og:site_name\" content=\"YdeaGames\" /> <meta property=\"og:image\"
+      content=\"https://gyazo.com/46074ada998579308d1f46d108cd566e/raw\" /> <meta
+      name=\"twitter:card\" content=\"JumpUp\" /> <meta name=\"twitter:site\" content=\"@ydeagames\"
+      /> <meta name=\"twitter:title\" content=\"Jump Up\" /> <meta name=\"twitter:description\"
+      content=\"\u4E0B\u304B\u3089\u8FEB\u308A\u304F\u308B\u6EB6\u5CA9\u306B\u8FFD\u3044\u3064\u304B\u308C\u306A\u3044\u3088\u3046\u306B\u4E0A\u3092\u76EE\u6307\u3059\u30B2\u30FC\u30E0\"
+      /> <meta name=\"twitter:image\" content=\"https://gyazo.com/46074ada998579308d1f46d108cd566e/raw\"
+      />"
+    HEAD_INJECTION: ' prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# website:
+      http://ogp.me/ns/website#"'
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -514,7 +533,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:BetterTemplate
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 1
